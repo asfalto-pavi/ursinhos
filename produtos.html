@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ursinhos de Pelúcia</title>
+        <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4424/4424437.png">
+        <meta name="Keywords" content="pelucias, loja de pelucias, plush, plush store, pelucias boas, pelucias coloridas, LOJA DE PELUCIA, PELUCIA">
+        <meta name="description" content="Página do Plush Plush designada para visualização dos produtos da empresa.">
+
+    </head>
+    <body>
+        <header>
+            <div class="cabecalho">
+                <h2 class="logo animate slideInTop" onclick="location.href='index.html'">plush plush</h2>
+                <form action="" class="barra">
+                    <input type="text" placeholder="Pesquisar" name="q">
+                    <button type="submit"><img src="estilos/imagens/pesquisar.png"></button>
+                </form>
+                <nav>
+                    <ul>
+                        <li class="animate slideInTop"><a href="produtos.html">Produtos</a></li>
+                        <li class="animate slideInTop"><a href="colecoes.html">Coleções</a></li>
+                        <li class="animate slideInTop"><a href="about.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+                <div class="selecionar">
+                    <img src="estilos/imagens/pesquisar.png" class="pesquisar">
+                    <button onclick="menuShow()"><img class="menu" src="estilos/imagens/menu.png"></button>
+                    <a href="https://twitter.com/"><img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter"></a>
+                </div>
+
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="item"><a href="produtos.html">Produtos</a></li>
+                    <li class="item"><a href="colecoes.html">Coleções</a></li>
+                    <li class="item"><a href="about.html">Sobre Nós</a></li>
+                    <li class="selecionar"><a href="https://twitter.com/"><img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter"></a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <main class="produtos">
+            
+            <div class="banner-produtos">
+                <div class="banner-titulo">
+                    <h1 class="animate slideInTop delay--0-3s">Produtos!</h1>
+                    <p class="animate slideInTop">Todos com o selo Plush Store de qualidade!</p>
+                </div>
+                <div class="banner-fundo"></div>
+            </div>
+
+            <div class="grid-prdt-produtos">
+
+                <div class="produto-produtos">
+                    
+                    <div class="cores">
+                        <button onclick="cores(1, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(1, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(1, 'azul')" class="cor cor3"></button>
+                    </div>
+                    
+                    <div onclick="location.href='#'" class="img-prdt-produtos">
+                        <img class="item-1-produtos" src="https://mybtoys.com/wp-content/uploads/LB1904_PR.png" alt="Sapo de pelúcia com dois olhos redondos olhando para o lado, boca sorridente e barriga verde mais escura.">
+                    </div>
+                    
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Sapinho fofo</p>
+                        </div>
+
+                        <div class="precos-content-produtos">
+
+                            <div class="precos-produtos">
+                                <p>55,00</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+                            
+                            <div class="contador-produtos">
+
+                                <button class="btn decrease" onclick="contador('menos', 1)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value1">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 1)"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="produto-produtos">
+                    
+                    <div class="cores">
+                        <button onclick="cores(2, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(2, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(2, 'azul')" class="cor cor3"></button>
+                    </div>
+
+                    <div onclick="location.href='#'" class="img-prdt-produtos item-2-produtos">
+                        <img class="item-2-produtos" src="https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696" alt="Gato de pelúcia vermelho com formato redondo e orelhas pontudas, esta de barriga encostada  no chão e seu rabo é o galho de uma arvore com uma folha verde na ponta.">
+                    </div>
+                    
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Gatinho Vermelho</p>
+                        </div>
+                        
+                        <div class="precos-content-produtos">
+                            <div class="precos-produtos">
+                                <p>42,90</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+
+                            <div class="contador-produtos">
+
+                                <button class="btn decrease" onclick="contador('menos', 2)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value2">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 2)"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="produto-produtos">
+
+                    <div class="cores">
+                        <button onclick="cores(3, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(3, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(3, 'azul')" class="cor cor3"></button>
+                    </div>
+
+                    <div onclick="location.href='#'" class="img-prdt-produtos">
+                        <img class="item-3-produtos" src="https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_large.png?v=1631621515" alt="Cachrro de pelucia felpudo de cor caramelo com a cabeça levemente inclinada para o lado e de rabinho em pé.">
+                    </div>
+
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Cachorrinho caramelo</p>
+                        </div>
+                        <div class="precos-content-produtos">
+                            <div class="precos-produtos">
+                                <p>38,95</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+
+                        <div class="precos-content-produtos">
+
+                            
+                            <div class="contador-produtos">
+                                
+                                <button class="btn decrease" onclick="contador('menos', 3)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value3">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 3)"><img src="estilos/imagens/mais.png"></button>
+                                
+                            </div>
+
+                            
+                        </div>
+
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="produto-produtos">
+
+                    <div class="cores">
+                        <button onclick="cores(4, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(4, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(4, 'azul')" class="cor cor3"></button>
+                    </div>
+
+                    <div onclick="location.href='#'" class="img-prdt-produtos">
+                        <img class="item-4-produtos" src="estilos/imagens/pato.png" alt="Cachrro de pelucia felpudo de cor caramelo com a cabeça levemente inclinada para o lado e de rabinho em pé.">
+                    </div>
+
+
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Patinho Derretido</p>
+                        </div>
+                        
+                        <div class="precos-content-produtos">
+
+                            <div class="precos-produtos">
+                                <p>45,50</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+
+                            <div class="contador-produtos">
+
+                                <button class="btn decrease" onclick="contador('menos', 4)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value4">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 4)"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+                        
+                </div>
+
+                <div class="produto-produtos">
+
+                    <div class="cores">
+                        <button onclick="cores(5, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(5, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(5, 'azul')" class="cor cor3"></button>
+                    </div>
+
+                    <div onclick="location.href='#'" class="img-prdt-produtos">
+                        <img class="item-5-produtos" src="estilos/imagens/girafa.png" alt="Girafa de Pelúcia em pé com dois olhos pretos, um fucinho claro, e uma pele amarela com manchas laranjas, a ponta de suas pernas também é laranja.">
+                    </div>
+
+
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Girrafinha pescoçuda</p>
+                        </div>
+                        <div class="precos-content-produtos">
+
+                            <div class="precos-produtos">
+                                <p>60,00</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+
+                            <div class="contador-produtos">
+
+                                <button class="btn decrease" onclick="contador('menos', 5)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value5">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 5)"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="produto-produtos">
+
+                    <div class="cores">
+                        <button onclick="cores(6, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(6, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(6, 'azul')" class="cor cor3"></button>
+                    </div>
+
+                    <div onclick="location.href='#'" class="img-prdt-produtos">
+                        <img class="item-6-produtos" src="estilos/imagens/jaré.png" alt="Jacaré de pelúcia verde em pé, com uma barriga amarela, uma camisa listrada amarela e azul com as bordas pretas, ele tem olhos com pálpebras meio caídas.">
+                    </div>
+
+
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Jacaré Trajado</p>
+                        </div>
+
+                        <div class="precos-content-produtos">
+
+                            <div class="precos-produtos">
+                                <p>75,10</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+
+                            <div class="contador-produtos">
+
+                                <button class="btn decrease" onclick="contador('menos', 6)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value6">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 6)"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="produto-produtos">
+
+                    <div class="cores">
+                        <button onclick="cores(7, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(7, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(7, 'azul')" class="cor cor3"></button>
+                    </div>
+
+                    <div onclick="location.href='#'" class="img-prdt-produtos">
+                        <img class="item-7-produtos" src="estilos/imagens/tartuga.png" alt="Tartaruga marinha amarelo claro de pelúcia, com manchas marrons no topo de sua cabeça e em seus outros membros, seu casco também é marrom e possui algumas manchas amarelas sobre ele, a tartaruga tem olhos bem grandes e bem abertos.">
+                    </div>
+
+
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Tartaruga Meiga</p>
+                        </div>
+
+
+                        <div class="precos-content-produtos">
+
+                            <div class="precos-produtos">
+                                <p>34,50</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+
+                            <div class="contador-produtos">
+
+                                <button class="btn decrease" onclick="contador('menos', 7)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value7">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 7)"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="produto-produtos">
+
+                    <div class="cores">
+                        <button onclick="cores(8, 'vermelho')" class="cor cor1"></button>
+                        <button onclick="cores(8, 'verde')" class="cor cor2"></button>
+                        <button onclick="cores(8, 'azul')" class="cor cor3"></button>
+                    </div>
+
+                    <div onclick="location.href='#'" class="img-prdt-produtos">
+                        <img class="item-8-produtos" src="estilos/imagens/coiote.png" alt="Hiena de pelúcia sentada, com um marrom escuro em seu focinho e final de suas patas, um marrom mediano em seu corpo com manchas pretas e com um pelo em seu peito em um tom mais claro, seus olhos são marrons e ela possui um pequeno cabelinho marrom no topo de sua cabeça.">
+                    </div>
+
+
+                    <div class="descricao-produtos">
+                        <div class="titulo-produtos">
+                            <p>Hiena Simpática</p>
+                        </div>
+
+                        <div class="precos-content-produtos">
+
+                            <div class="precos-produtos">
+                                <p>72,90</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+
+                            <div class="contador-produtos">
+
+                                <button class="btn decrease" onclick="contador('menos', 8)"><img src="estilos/imagens/menos.png"></button>
+
+                                <span class="valor" id="value8">0</span>
+
+                                <button class="btn increase" onclick="contador('mais', 8)"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            
+        </main>
+
+
+        <script src="script.js"></script>
+
+        <footer>
+            
+            <div class="footer1">
+                <h3>INFORMAÇÕES</h3>
+                <p>Endereço Rua Alegre, 123, Bairro, RS, Brasil</p>
+                <p>© 2021-2023 PlushStore.com</p>
+                <p>CEP: 04543-011</p>
+                <br>
+            </div>
+
+            <div class="footer2">
+                <ul>
+                    <h3>PÁGINAS</h3>
+                    <li><a href="produtos.html">Podutos</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                </ul>
+                <br>
+            </div>
+
+            <div class="footer3">
+                <h3>CONTATOS</h3>
+                <p>Telefone para contato: (35) 98845-6351</p>
+                <br>
+                <div class="Contatos2">
+                    <a href="https://twitter.com/elonmusk"> <img class="rede_social" src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png"></a>
+
+                    <a href="https://www.instagram.com"><img class="rede_social" src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png"></a>
+
+                    <a href="https://www.facebook.com"><img class="rede_social" src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png"></a>
+                </div>
+                <br>
+            </div>
+        </footer>
+    </body>
+</html>
